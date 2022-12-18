@@ -1,0 +1,23 @@
+# calculator
+while True :
+    
+    print("calculator")
+    a = input("Enter the Number A : ")
+    b = input("Enter the Number B : ")
+    print("Select the Operator\n 1 = + \n 2 = - \n 3 = * \n 4 = /")
+    choice = input(" Enter the Operator : ")
+    if choice in('1','2','3','4') :
+        if choice =='1':
+            print(int(a)+int(b))
+        elif choice == '2':
+            print(int(a)-int(b))
+        elif choice == '3':
+            print(int(a)*int(b))
+        elif choice == '4':
+            print(int(a)/int(b))
+        next_calculation = input("Let's do next calculation? (yes/no): ")
+        if next_calculation == "no":
+            break
+     
+    else :
+        print("")
